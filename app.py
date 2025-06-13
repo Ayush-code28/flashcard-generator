@@ -3,7 +3,7 @@ import requests
 import pdfplumber
 import pandas as pd
 
-HF_API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
+HF_API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-rw-1b"
 HF_TOKEN = "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"  # 🔁 Replace this with your Hugging Face token
 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 
