@@ -47,6 +47,7 @@ def parse_flashcards(raw_output):
     return qa_pairs
 
 st.title("📚 LLM-Powered Flashcard Generator")
+st.write(f"🔑 Token loaded: {HF_TOKEN[:8]}...")  # Just for debug
 
 input_method = st.radio("Select input method:", ["Paste Text", "Upload PDF"])
 
@@ -83,3 +84,6 @@ if st.button("Generate Flashcards") and input_text.strip():
                 st.download_button("📥 Download CSV", csv, "flashcards.csv", "text/csv")
         except Exception as e:
              st.error(f"Error while parsing flashcards: {str(e)}")
+
+st.write(f"🔑 Token loaded: {HF_TOKEN[:8]}...")  # Just for debug
+# so this is just to make sure it works fine also make suer it has all the above details of the new roman emipre 
